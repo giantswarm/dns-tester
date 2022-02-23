@@ -19,8 +19,8 @@ workflows:
       - architect/push-to-app-catalog:
           context: architect
           name: push-dns-tester-to-playground-app-catalog
-          app_catalog: "playground-catalog"
-          app_catalog_test: "playground-test-catalog"
+          app_catalog: "giantswarm-playground-catalog"
+          app_catalog_test: "giantswarm-playground-test-catalog"
           chart: "dns-tester-app"
           filters:
             tags:
