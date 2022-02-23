@@ -6,6 +6,7 @@ orbs:
 workflows:
   build:
     jobs:
+      - architect/push-to-docker
           context: architect
           name: push-dns-tester-to-docker
           image: "quay.io/giantswarm/dns-tester"
