@@ -4,7 +4,6 @@ project:
   branch: "[[ .Branch ]]"
   commit: "[[ .SHA ]]"
 
-
 image:
   name: "giantswarm/dns-tester"
   tag: "[[ .Version ]]"
