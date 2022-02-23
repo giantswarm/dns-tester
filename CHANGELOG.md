@@ -7,8 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.0] - 2022-02-23
+
 ### Added
 
 - Initial commit.
 
-[Unreleased]: https://github.com/giantswarm/azure-scheduled-events/compare/v0.0.0...HEAD
+[Unreleased]: https://github.com/giantswarm/dns-tester/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/giantswarm/dns-tester/compare/v0.0.0...v0.1.0
