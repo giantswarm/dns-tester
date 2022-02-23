@@ -1,0 +1,15 @@
+serviceType: managed
+
+project:
+  branch: "[[ .Branch ]]"
+  commit: "[[ .SHA ]]"
+
+
+image:
+  name: "giantswarm/dns-tester"
+  tag: "[[ .Version ]]"
+Installation:
+  V1:
+    Registry:
+      Domain: quay.io
+
