@@ -1,17 +1,14 @@
 version: 2.1
 
 orbs:
-  architect: giantswarm/architect@4.33.0
+  architect: giantswarm/architect@4.35.5
 
 workflows:
   build:
     jobs:
-      - architect/push-to-docker:
+      - architect/push-to-registries:
           context: architect
-          name: push-dns-tester-to-docker
-          image: "quay.io/giantswarm/dns-tester"
-          username_envar: "QUAY_USERNAME"
-          password_envar: "QUAY_PASSWORD"
+          name: push-to-registries
           filters:
             tags:
               only: /^v.*/
