@@ -19,6 +19,7 @@ workflows:
             - master
     - architect/push-to-app-catalog:
         context: architect
+        executor: app-build-suite
         name: push-dns-tester-to-playground-app-catalog
         app_catalog: giantswarm-playground-catalog
         app_catalog_test: giantswarm-playground-test-catalog
@@ -27,6 +28,4 @@ workflows:
           tags:
             only: /^v.*/
           branches:
-            ignore:
-            - main
-            - master
+            only: /.*/
